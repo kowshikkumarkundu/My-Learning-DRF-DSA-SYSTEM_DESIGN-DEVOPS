@@ -1,0 +1,29 @@
+DRF learning --> Chatgpt --> https://chatgpt.com/g/g-p-6a96a917048081918ac122326efe9e3f-drf-a-to-z/project
+
+DSA --> https://youtu.be/f9Aje_cN_CY?si=qdRxG57sjMXLHNg3
+
+System Design LLD --> https://www.youtube.com/watch?v=AK0hu0Zxua4&list=PLQEaRBV9gAFvzp6XhcNFpk1WdOcyVo9qT&index=1
+
+DevOps --> https://www.youtube.com/watch?v=xN3BKHji12I&list=PLlfy9GnSVerQjeoYfoYKEMS1yKl89NOvL
+
+Daily study time table:
+
+Project building 1 hour 30 min
+
+DRF learning 1 hour 30 min
+
+DSA learning 1 hour 30 min
+
+System design learning 1 hour 30 min
+
+Devops learning 1 hour 30 min
+
+class topic learning 1 hour 30 min
+
+total: 9 hour
+
+in learning phase 1 hour 15 min for learning and practacing. and 10 min for revision. 5 min for recall old learning.
+let's assume I start learning system design. First 10 min will be for recall old study topic.
+1 hour 10 min for new topic learning plus practicing plus take notes. 
+10 min for revision what i learn just now.
+ 

@@ -1,0 +1,39 @@
+create virtual environment
+python -m venv venv
+
+activate
+venv\Scripts\activate
+
+Required packages install করো
+pip install django djangorestframework google-genai python-dotenv
+
+এখানে:
+django → backend framework
+djangorestframework → API endpoint
+google-genai → Gemini API-এর official Python SDK
+python-dotenv → .env থেকে API key পড়ার জন্য
+
+
+Project তৈরি
+django-admin startproject config .
+
+create app ai
+python manage.py startapp ai
+
+
+4.1 .env থেকে API key পড়া
+
+config/settings.py-এর শুরুতে যোগ করো:
+
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+তারপর চাইলে temporarily check করতে পারো:
+
+print(os.getenv("GEMINI_API_KEY"))
+
+Server restart করলে terminal-এ তোমার API key দেখা যাবে।
+
+Check করার পর এই print() অবশ্যই remove করবে।

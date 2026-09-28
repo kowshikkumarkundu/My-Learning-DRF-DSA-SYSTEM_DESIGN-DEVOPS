@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('serializer/',include('phase_2_serializer.urls')),
     path('test2/',include('test2.urls')),
+    path('final_serializer_challenge/',include('final_serializer_challenge.urls'))
 ]

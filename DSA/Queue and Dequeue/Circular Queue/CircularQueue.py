@@ -26,6 +26,9 @@ class CircularQueue:
         if self.isEmpty():
             print("Queue is Empty")
 
+        elif self.front == self.rear:
+            self.front = self.rear = -1
+
         else:
             self.front = (self.front + 1) % self.size
 

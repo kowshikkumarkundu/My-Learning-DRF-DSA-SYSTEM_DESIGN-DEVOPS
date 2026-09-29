@@ -5,6 +5,8 @@ from .models import Product
 class ProductSerializer(serializers.ModelSerializer):
     final_price = serializers.SerializerMethodField()
     in_stock = serializers.SerializerMethodField()
+    discount = serializers.IntegerField(default=0)
+    stock = serializers.IntegerField(default=0)
 
     class Meta:
         model = Product

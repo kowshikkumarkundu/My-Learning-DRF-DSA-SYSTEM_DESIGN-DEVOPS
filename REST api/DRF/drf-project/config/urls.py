@@ -23,4 +23,6 @@ urlpatterns = [
     path('test2/',include('test2.urls')),
     path('final_serializer_challenge/',include('final_serializer_challenge.urls')),
     path('phase_3_CRUD_operation/',include('phase_3_CRUD_operation.urls')),
+    path('phase_4/',include('phase_4.urls')),
+    path('phase_5/',include('phase_5.urls')),
 ]

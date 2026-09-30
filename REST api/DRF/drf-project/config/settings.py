@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'test2',
     'final_serializer_challenge',
     'phase_3_CRUD_operation',
+    'phase_4',
+    'phase_5',
 ]
 
 MIDDLEWARE = [

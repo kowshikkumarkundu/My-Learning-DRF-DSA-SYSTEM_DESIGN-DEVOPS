@@ -1,5 +1,5 @@
 """
-URL configuration for config project.
+URL configuration for task_management project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/6.1/topics/http/urls/
@@ -16,16 +16,24 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
+
+class TestView(APIView):
+    def get(self, request):
+        return Response({
+            "message": "DRF is working"
+        })
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('serializer/',include('phase_2_serializer.urls')),
-    path('test2/',include('test2.urls')),
-    path('final_serializer_challenge/',include('final_serializer_challenge.urls')),
-    path('phase_3_CRUD_operation/',include('phase_3_CRUD_operation.urls')),
-    path('phase_4/',include('phase_4.urls')),
-    path('phase_5/',include('phase_5.urls')),
-    path('phase_6/',include('phase_6.urls')),
-    path('phase_6_jwt/',include('phase_6_jwt.urls')),
-    path('project1/',include('project1.urls')),
+    path('test/', TestView.as_view()),
+    path('api/', include('tasks.urls')),
+    path('api/token/', TokenObtainPairView.as_view()),
+    path('api/token/refresh/', TokenRefreshView.as_view()),
 ]
